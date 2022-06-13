@@ -1,0 +1,18 @@
+六月 13, 2022 4:04:12 下午 com.linqibin.LogTest printLog
+严重: severe
+六月 13, 2022 4:04:12 下午 com.linqibin.LogTest printLog
+警告: warning
+六月 13, 2022 4:04:12 下午 com.linqibin.LogTest printLog
+信息: info
+六月 13, 2022 4:04:21 下午 com.linqibin.LogTest printLog
+严重: severe
+六月 13, 2022 4:04:21 下午 com.linqibin.LogTest printLog
+警告: warning
+六月 13, 2022 4:04:21 下午 com.linqibin.LogTest printLog
+信息: info
+六月 13, 2022 4:04:56 下午 com.linqibin.LogTest printLog
+严重: severe
+六月 13, 2022 4:04:56 下午 com.linqibin.LogTest printLog
+警告: warning
+六月 13, 2022 4:04:56 下午 com.linqibin.LogTest printLog
+信息: info
