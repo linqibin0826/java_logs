@@ -1,7 +1,5 @@
 package com.linqibin;
 
-import org.apache.log4j.Appender;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
@@ -9,7 +7,7 @@ import org.junit.Test;
  * @author lqb
  * @date 2022/6/13
  */
-public class TestLog4j {
+public class Log4jTest {
 
     @Test
     public void quickStart() {
@@ -17,7 +15,7 @@ public class TestLog4j {
         // 初始化系统配置，不需要配置文件
 //        BasicConfigurator.configure();
         // 创建日志记录器对象
-        Logger logger = Logger.getLogger(TestLog4j.class);
+        Logger logger = Logger.getLogger(Log4jTest.class);
         // 日志记录输出
         logger.info("hello log4j");
         printLog(logger);
