@@ -1,35 +1,25 @@
 package com.linqibin;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.helpers.LogLog;
 import org.junit.Test;
-
-import java.math.BigDecimal;
-import java.util.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
+ *
  * @author lqb
- * @date 2022/6/13
+ * @date 2022/6/16
  */
-public class Log4jTest {
+public class LogbackTest {
+
+    public static Logger LOGGER = LoggerFactory.getLogger(LogbackTest.class);
 
     @Test
     public void quickStart() {
-
-        // 初始化系统配置，不需要配置文件
-//        BasicConfigurator.configure();
-        // 创建日志记录器对象
-        LogLog.setInternalDebugging(true);
-        Logger logger = Logger.getLogger(Log4jTest.class);
-        // 日志记录输出
-        logger.info("hello log4j");
-        printLog(logger);
+        printLog(LOGGER);
     }
 
     private void printLog(Logger logger) {
         // 日志级别
-        // 严重错误，一般会造成系统崩溃和终止运行
-        logger.fatal("fatal");
         // 错误信息，但不会影响系统运行
         logger.error("error");
         // 警告信息，可能会发生问题;

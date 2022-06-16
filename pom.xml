@@ -12,6 +12,10 @@
     <modules>
         <module>Jul_demo</module>
         <module>Log4j_demo</module>
+        <module>Jcl_demo</module>
+        <module>Slf_demo</module>
+        <module>Logback_demo</module>
+        <module>Log4j2_demo</module>
     </modules>
 
     <properties>
@@ -20,10 +24,27 @@
         <junit.version>4.12</junit.version>
         <log4j.version>1.2.17</log4j.version>
         <mysql.version>8.0.28</mysql.version>
+        <common-logging.version>1.2</common-logging.version>
+        <slf4j-api.version>1.7.36</slf4j-api.version>
+        <slf4j-simple.version>1.7.30</slf4j-simple.version>
+        <logback-classic.version>1.2.10</logback-classic.version>
+        <logback-core.version>1.2.10</logback-core.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback-classic.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback-core.version}</version>
+            </dependency>
+
+
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
@@ -39,6 +60,21 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${common-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j-simple.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
