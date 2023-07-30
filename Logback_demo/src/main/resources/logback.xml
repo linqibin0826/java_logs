@@ -13,6 +13,8 @@
     -->
     <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
     <property name="pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %c [%thread] %-5level %msg%n"/>
+    <property name="logPatternConsoleLog"
+              value="%date{yyyy-MM-dd HH:mm:ss} | %highlight(%-5.5p) | %boldYellow(%-50.50c) | %boldGreen(%-4.4L): %magenta(%-15M) : %boldBlue(%-15.15t) | %cyan(%m) %n"/>
     <!-- 日志文件存放目录 -->
     <property name="log_dir" value="src/main/resources/logs"/>
     <!--
@@ -26,7 +28,7 @@
         <target>System.out</target>
         <!--日志格式配置-->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <pattern>${pattern}</pattern>
+            <pattern>${logPatternConsoleLog}</pattern>
         </encoder>
     </appender>
     <!--日志文件输出appender对象-->
